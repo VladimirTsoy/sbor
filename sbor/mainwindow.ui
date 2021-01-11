@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1177</width>
+    <height>574</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Сбор измерительной информации</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/res/1/world_edit.png</normaloff>:/res/1/world_edit.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1177</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Настройка</string>
+    </property>
+    <addaction name="action_FNOS"/>
+    <addaction name="separator"/>
+    <addaction name="action_FUST"/>
+    <addaction name="action_STARTSBOR"/>
+    <addaction name="separator"/>
+    <addaction name="action_FSERV"/>
+    <addaction name="action_FSTATSERV"/>
+    <addaction name="action_STARTSORT"/>
+    <addaction name="separator"/>
+    <addaction name="action_FSIST"/>
+    <addaction name="separator"/>
+    <addaction name="action_FPOLZ"/>
+    <addaction name="action_IZMPOLZ"/>
+    <addaction name="separator"/>
+    <addaction name="action_CREATEBD"/>
+    <addaction name="separator"/>
+    <addaction name="action_RPOM"/>
+    <addaction name="separator"/>
+    <addaction name="action_EXIT"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Измерения  с НПН</string>
+    </property>
+    <widget class="QMenu" name="menu_3">
+     <property name="title">
+      <string>БДС</string>
+     </property>
+     <addaction name="action_BDSI"/>
+     <addaction name="action_BDSV"/>
+    </widget>
+    <addaction name="action_FDS"/>
+    <addaction name="action_FDZS"/>
+    <addaction name="action_FKOS"/>
+    <addaction name="menu_3"/>
+    <addaction name="action_METEO"/>
+    <addaction name="action_SPO"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Измерения с КА</string>
+    </property>
+    <addaction name="action_FFULL"/>
+    <addaction name="separator"/>
+    <addaction name="action_FDDS"/>
+    <addaction name="action_FVRV"/>
+    <addaction name="separator"/>
+    <addaction name="action_FSP3"/>
+    <addaction name="separator"/>
+    <addaction name="action_FSOL"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>Выдача информации</string>
+    </property>
+    <addaction name="action_FPOTR"/>
+    <addaction name="separator"/>
+    <addaction name="action_FZAPR"/>
+    <addaction name="separator"/>
+    <addaction name="action_FAUTOZAPR"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>Первичная оценка сеансов</string>
+    </property>
+    <addaction name="action_FSEANSDS"/>
+    <addaction name="action_FSEANSDZS"/>
+    <addaction name="action_FSEANSPPSI"/>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>Оценка потерь ИИ БА КА</string>
+    </property>
+    <addaction name="action_FSEANSDDS"/>
+    <addaction name="action_FSEANSVRV"/>
+    <addaction name="action_FSBA"/>
+   </widget>
+   <widget class="QMenu" name="menu_8">
+    <property name="title">
+     <string>Количество сеансов</string>
+    </property>
+    <addaction name="action_FKOLSEANSDS"/>
+    <addaction name="action_FKOLSEANSDZS"/>
+    <addaction name="action_FPPSI"/>
+   </widget>
+   <widget class="QMenu" name="menu_9">
+    <property name="title">
+     <string>Обмен с ЦУП</string>
+    </property>
+    <addaction name="action_FUSTNF"/>
+    <addaction name="separator"/>
+    <addaction name="action_STARTFORM"/>
+    <addaction name="separator"/>
+    <addaction name="action_FCOGI"/>
+    <addaction name="action_FCUP"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_6"/>
+   <addaction name="menu_7"/>
+   <addaction name="menu_8"/>
+   <addaction name="menu_9"/>
+  </widget>
+  <action name="action_FNOS">
+   <property name="text">
+    <string>Архивные носители</string>
+   </property>
+  </action>
+  <action name="action_FPOLZ">
+   <property name="text">
+    <string>Список пользователей</string>
+   </property>
+  </action>
+  <action name="action_CREATEBD">
+   <property name="text">
+    <string>Создать БД</string>
+   </property>
+  </action>
+  <action name="action_FUST">
+   <property name="text">
+    <string>Установки автоматизированного преобразования  ИИ</string>
+   </property>
+  </action>
+  <action name="action_IZMPOLZ">
+   <property name="text">
+    <string>Изменить пользователя</string>
+   </property>
+  </action>
+  <action name="action_EXIT">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="action_FDS">
+   <property name="text">
+    <string>ДС</string>
+   </property>
+  </action>
+  <action name="action_FDZS">
+   <property name="text">
+    <string>ДЗС</string>
+   </property>
+  </action>
+  <action name="action_FKOS">
+   <property name="text">
+    <string>КОС</string>
+   </property>
+  </action>
+  <action name="action_METEO">
+   <property name="text">
+    <string>МЕТЕО</string>
+   </property>
+  </action>
+  <action name="action_BDSI">
+   <property name="text">
+    <string>Необработанные</string>
+   </property>
+  </action>
+  <action name="action_BDSV">
+   <property name="text">
+    <string>Обработанные</string>
+   </property>
+  </action>
+  <action name="action_FFULL">
+   <property name="text">
+    <string>ППСИ</string>
+   </property>
+  </action>
+  <action name="action_FDDS">
+   <property name="text">
+    <string>ДДС</string>
+   </property>
+  </action>
+  <action name="action_FVRV">
+   <property name="text">
+    <string>ВРВ</string>
+   </property>
+  </action>
+  <action name="action_FPOTR">
+   <property name="text">
+    <string>Список потребителей</string>
+   </property>
+  </action>
+  <action name="action_FZAPR">
+   <property name="text">
+    <string>Запросы</string>
+   </property>
+  </action>
+  <action name="action_FSEANSDS">
+   <property name="text">
+    <string>ДС</string>
+   </property>
+  </action>
+  <action name="action_FSEANSDZS">
+   <property name="text">
+    <string>ДЗС</string>
+   </property>
+  </action>
+  <action name="action_FSEANSPPSI">
+   <property name="text">
+    <string>ППСИ</string>
+   </property>
+  </action>
+  <action name="action_FSEANSDDS">
+   <property name="text">
+    <string>ДДС</string>
+   </property>
+  </action>
+  <action name="action_FSEANSVRV">
+   <property name="text">
+    <string>ВРВ</string>
+   </property>
+  </action>
+  <action name="action_FKOLSEANSDS">
+   <property name="text">
+    <string>ДС</string>
+   </property>
+  </action>
+  <action name="action_FKOLSEANSDZS">
+   <property name="text">
+    <string>ДЗС</string>
+   </property>
+  </action>
+  <action name="action_FSERV">
+   <property name="text">
+    <string>Установки автоматического сбора информации</string>
+   </property>
+  </action>
+  <action name="action_FSTATSERV">
+   <property name="text">
+    <string>Статистика автоматического сбора информации</string>
+   </property>
+  </action>
+  <action name="action_FSBA">
+   <property name="text">
+    <string>Состояние БА КА</string>
+   </property>
+  </action>
+  <action name="action_SPO">
+   <property name="text">
+    <string>СПО</string>
+   </property>
+  </action>
+  <action name="action_FSIST">
+   <property name="text">
+    <string>Журнал работы</string>
+   </property>
+  </action>
+  <action name="action_RPOM">
+   <property name="text">
+    <string>Помещение информации в БД</string>
+   </property>
+  </action>
+  <action name="action_STARTSBOR">
+   <property name="text">
+    <string>Запуск автоматизированного преобразования ИИ</string>
+   </property>
+  </action>
+  <action name="action_STARTSORT">
+   <property name="text">
+    <string>Запуск автоматического сбора информации</string>
+   </property>
+  </action>
+  <action name="action_FPPSI">
+   <property name="text">
+    <string>ППСИ</string>
+   </property>
+  </action>
+  <action name="action_FUSTNF">
+   <property name="text">
+    <string>Настройка обмена формами с ЦУП</string>
+   </property>
+  </action>
+  <action name="action_STARTFORM">
+   <property name="text">
+    <string>Запуск обмена формами с ЦУП</string>
+   </property>
+  </action>
+  <action name="action_FCOGI">
+   <property name="text">
+    <string>Входящие формы из ЦУП</string>
+   </property>
+  </action>
+  <action name="action_FCUP">
+   <property name="text">
+    <string>Исходящие формы в ЦУП</string>
+   </property>
+  </action>
+  <action name="action_FAUTOZAPR">
+   <property name="text">
+    <string>Автоматические запросы</string>
+   </property>
+  </action>
+  <action name="action_FSP3">
+   <property name="text">
+    <string>ЭВИ</string>
+   </property>
+  </action>
+  <action name="action_FSOL">
+   <property name="text">
+    <string>Протоколы оценки качества ВРВ</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

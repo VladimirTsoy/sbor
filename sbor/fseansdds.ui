@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FSeansDds</class>
+ <widget class="QWidget" name="FSeansDds">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>981</width>
+    <height>631</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Оценка потерь ИИ ДДС</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/res/1/formatting_bottom_percent.png</normaloff>:/res/1/formatting_bottom_percent.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTableView" name="tableView"/>
+   </item>
+   <item row="0" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QComboBox" name="cb_mes">
+          <item>
+           <property name="text">
+            <string>Январь</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Февраль</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Март</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Апрель</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Май</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Июнь</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Июль</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Август</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Сентябрь</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Октябрь</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ноябрь</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Декабрь</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="cb_god">
+          <item>
+           <property name="text">
+            <string>2016</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2017</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2018</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2019</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2020</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2021</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2022</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2023</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2024</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2025</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2026</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2027</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2028</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2029</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2030</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2031</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="cb_nka">
+          <item>
+           <property name="text">
+            <string>126</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>127</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="cb_otb">
+          <property name="text">
+           <string>Включить отбор</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="cb_grgod">
+          <property name="text">
+           <string>Сгруппировать за год</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="btnRefresh">
+       <property name="text">
+        <string>Обновить</string>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/res/Sync.png</normaloff>:/res/Sync.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnExit">
+       <property name="text">
+        <string>Выход</string>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/res/Exit.png</normaloff>:/res/Exit.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnGraf">
+       <property name="text">
+        <string>График</string>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/res/1/chart_column_up.png</normaloff>:/res/1/chart_column_up.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
