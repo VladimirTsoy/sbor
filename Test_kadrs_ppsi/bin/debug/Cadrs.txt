@@ -1,0 +1,2 @@
+ |    IndSt1    |    IndSt2    |  cad1  |  cad2  | pr_crc1 | pr_crc2 |     Time1      |     Time2      | VKan1 | VKan2 |  CC1  |  CC2  |  VCC1  |  VCC2  | 
+ |      0       |      0       |    1    |    1    |    1    |    1    |  01:11:11.111  |  01:11:11.111  |   0   |   0   |   0   |   0   |   0    |   0    | 
